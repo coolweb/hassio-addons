@@ -1,0 +1,27 @@
+{
+  "name": "ble companion",
+  "version": "1",
+  "slug": "ble_companion",
+  "description": "ble companion",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "host_network": "true",
+  "host_dbus": "true",
+  "options": {
+    "interval": 30,
+    "grace_period": 60,
+    "home_assistant_port": 8123,
+    "home_assistant_password": "",
+    "home_assistant_devices": []
+  },
+  "schema": {
+    "interval": "int(10,60)",
+    "grace_period": "int(10,300)",
+    "home_assistant_port": "int",
+    "home_assistant_password": "str?",
+    "home_assistant_devices": ["str?"]
+  }
+}

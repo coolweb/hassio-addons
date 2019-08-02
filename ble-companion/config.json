@@ -15,6 +15,7 @@
     "grace_period": 60,
     "home_assistant_port": 8123,
     "home_assistant_password": "",
+    "home_assistant_token": "",
     "home_assistant_devices": []
   },
   "schema": {
@@ -22,6 +23,7 @@
     "grace_period": "int(10,300)",
     "home_assistant_port": "int",
     "home_assistant_password": "str?",
+    "home_assistant_token": "str?",
     "home_assistant_devices": ["str?"]
   }
 }
